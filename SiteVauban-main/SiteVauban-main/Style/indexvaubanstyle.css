@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+
+section {
+    
+    border: solid;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    padding: 40px;
+    border-color: #bfb59d;
+}
+section h1 {
+    font-family:"EduTASbeginner-Regular", sans-serif ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-family:"EduTASbeginner-Regular", sans-serif ;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #596e79;
+    padding: 10px;
+}
+
+#listvauban {
+    
+    
+    font-family: 'Alegreya', serif;
+    border: 6px solid #ffffff;
+    background-color: #12121023;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+    width: 75%;
+   
+   
+    
+}
+
+
+#listvauban ul {
+    display:flex;
+    justify-content: space-between;
+    
+}
+#listvauban li {
+    
+    list-style-type: none;
+}
+
+#listvauban li a {
+    position: relative;
+    font-size: 1.3em;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #596e79;
+    transition: color 0.4s linear;
+}    
+#listvauban li a:hover {
+    color:white;
+    
+    
+}
+#listvauban li a:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    animation: linkBar 0.8s ease-in-out forwards;
+    
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes linkBar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+#vidV {
+    margin-right: 50px;
+}
+#titlesection {
+    padding-top: 20px;
+    padding-left: 5px;
+    color: #596e79;
+}
+section i[class="fa-solid fa-circle-up fa-fade"] {
+    padding-left: 10px;
+    color: #998e74;
+}
+section video {
+    margin-top: 40px;
+    margin-left: 170px;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    border: white solid 8px;
+   
+}
+#id_pres {
+    text-align: center;
+    font-family:"EduTASbeginner-Regular", sans-serif ;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #596e79;
+}
+
+#color-changing-link {
+    text-align: center;
+    padding: 5px;
+    background-color: #bfb59d;
+    color: #596e79;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+
+#my_picture {
+    width: 341px;
+    height: 270px;
+}
+
+/* Styles pour le pied de page (footer) */
+#footercontainer {
+   
+    clear: both;
+    display: flex;
+}
+
+#imgbrg {
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    border: white solid;
+    transition: transform 1s;
+}
+#imgbrg:hover {
+    transform: scale(1.1);
+}
+
+#pictures_div {
+   
+    margin: 5px 130px 20px 180px;
+    
+
+
+}
+
+.footerimg {
+    height: 100px;
+    width: 150px;
+    border-radius: 25px;
+    transition: transform 1s;
+    border: white solid;
+    z-index: 1;
+}
+
+.imagegallery{
+    display: flex;
+    flex: wrap;
+    gap: 20px;
+    left:0 px;
+}
+#pictures_div ul {
+    list-style: none;
+}
+.imagegallery > li {
+    position: relative;
+}
+.imagetext{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left:0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.4em;
+    font-weight: bold;
+    /*center text*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.imagegallery li:hover .imagetext{
+    transform: scale(1);
+    z-index: 4;
+   
+}
+.imagegallery li:hover .footerimg {
+    transform: scale(2);
+    z-index: 4;
+    position: relative;
+}
+#travel {
+    margin-left: 140px;
+}
+footer h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+    color:#596e79 ;
+    
+    width: 300px;
+}
+#villefrancheimg {
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    border: white solid;
+    transition: transform 1s;
+}
+#villefrancheimg:hover {
+    transform: scale(1.1);
+}
